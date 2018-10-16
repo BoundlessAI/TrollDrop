@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 6e46a0c0550e50e15007b849aa2a2299375ab180
+PODS:
+  - Sesame (0.1.1)
+
+DEPENDENCIES:
+  - Sesame
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Sesame
+
+SPEC CHECKSUMS:
+  Sesame: dce2d9405d2565ef728e18c452499221902edeb3
+
+PODFILE CHECKSUM: 30532bbda0fa0f23f2a525f01f44dc3d80705b6b
 
 COCOAPODS: 1.5.3
