@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70C645C75F100F26FB3F267C /* libPods-TrollDrop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9296A918ECF24E5C63AD2B82 /* libPods-TrollDrop.a */; };
 		831443A81CD54BD9004253E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 831443A71CD54BD9004253E3 /* main.m */; };
 		831443AB1CD54BD9004253E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 831443AA1CD54BD9004253E3 /* AppDelegate.m */; };
 		831443AE1CD54BD9004253E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831443AD1CD54BD9004253E3 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10B147715D098C42BD9AA09A /* Pods-TrollDrop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrollDrop.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrollDrop/Pods-TrollDrop.release.xcconfig"; sourceTree = "<group>"; };
+		619FB6B6DF5AD57180438F0B /* Pods-TrollDrop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrollDrop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrollDrop/Pods-TrollDrop.debug.xcconfig"; sourceTree = "<group>"; };
 		831443A31CD54BD9004253E3 /* TrollDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrollDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		831443A71CD54BD9004253E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		831443A91CD54BD9004253E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		831443B51CD54BD9004253E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		831443B71CD54BD9004253E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		831443BD1CD54FAC004253E3 /* trollface.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trollface.jpg; sourceTree = "<group>"; };
+		9296A918ECF24E5C63AD2B82 /* libPods-TrollDrop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrollDrop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C645C75F100F26FB3F267C /* libPods-TrollDrop.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F19A63212DB2419DCB9C81B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				619FB6B6DF5AD57180438F0B /* Pods-TrollDrop.debug.xcconfig */,
+				10B147715D098C42BD9AA09A /* Pods-TrollDrop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8314439A1CD54BD9004253E3 = {
 			isa = PBXGroup;
 			children = (
 				831443A51CD54BD9004253E3 /* TrollDrop */,
 				831443A41CD54BD9004253E3 /* Products */,
+				1F19A63212DB2419DCB9C81B /* Pods */,
+				B04F84A547A896BEB6A103BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +98,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B04F84A547A896BEB6A103BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9296A918ECF24E5C63AD2B82 /* libPods-TrollDrop.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,6 +113,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 831443BA1CD54BD9004253E3 /* Build configuration list for PBXNativeTarget "TrollDrop" */;
 			buildPhases = (
+				67F0EF0344C4352514292BF6 /* [CP] Check Pods Manifest.lock */,
 				8314439F1CD54BD9004253E3 /* Sources */,
 				831443A01CD54BD9004253E3 /* Frameworks */,
 				831443A11CD54BD9004253E3 /* Resources */,
@@ -147,6 +172,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67F0EF0344C4352514292BF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrollDrop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8314439F1CD54BD9004253E3 /* Sources */ = {
@@ -267,6 +313,7 @@
 		};
 		831443BB1CD54BD9004253E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 619FB6B6DF5AD57180438F0B /* Pods-TrollDrop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TrollDrop/Info.plist;
@@ -278,6 +325,7 @@
 		};
 		831443BC1CD54BD9004253E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10B147715D098C42BD9AA09A /* Pods-TrollDrop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TrollDrop/Info.plist;
